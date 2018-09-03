@@ -1,0 +1,67 @@
+{
+  "images": {},
+  "text": {},
+  "host": {
+    "renewbuy": {
+      "url": "http://dev.renewbuy.com/api/v2",
+      "appId": "cd2bf5e6-fe8d-4cc2-8ad7-0ae8603a3f70",
+      "apiSecretKey": "4ZUAyfNL5IgV7MqSg7AHJplkQLSVFqSn",
+      "api": {
+        "login": {
+          "path": "/auth/login/",
+          "method": "POST"
+        },
+        "register": {
+          "path": "/auth/register_executive/",
+          "method": "POST"
+        },
+        "reset": {
+          "path": "/auth/passwordchange/",
+          "method": "POST"
+        }
+      }
+    },
+    "renewbuyV1": {
+      "url": "http://dev.renewbuy.com/api/v1",
+      "appId": "",
+      "apiSecretKey": "",
+      "api": {
+        "forgot": {
+          "path": "/accounts/password/reset/",
+          "method": "POST"
+        }
+      }
+    },
+    "dossier": {
+      "url": "http://10.10.30.213:8000/api",
+      "appId": "",
+      "apiSecretKey": "",
+      "api": {
+        "dashboard": {
+          "path": "/dashboard/",
+          "method": "GET"
+        } ,
+        "get_dashboard":{
+          "path": "/dashboard/{id}?start_date={start_date}&end_date={end_date}",
+          "method": "GET"
+        } 
+      }
+    },
+    "paymaster": {},
+    "ams": {
+      "url": "http://uat.accounts.renewbuy.com/api/v1",
+      "appId": "cc350a6b-beb2-4d1d-b06d-f1c5c6832175",
+      "apiSecretKey": "lwtW9MrNKIc2JrfH94HFQvb2esOLsRcB",
+      "api": {
+        "login": {
+          "path": "/authenticate/",
+          "method": "POST"
+        },
+        "register": {
+          "path": "/register/",
+          "method": "POST"
+        }
+      }
+    }
+  }
+}
