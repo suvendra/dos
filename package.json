@@ -1,8 +1,8 @@
 {
   "name": "cra-electron",
   "description": "CRA + Electron sitting in a tree",
-  "author": "Kitze",
-  "version": "0.2.7",
+  "author": "Suvendra <suvendra.kumar@renewbuy.com>",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@coreui/coreui": "^2.0.4",
@@ -10,9 +10,11 @@
     "@coreui/icons": "0.2.0",
     "@coreui/react": "^2.0.5",
     "bootstrap": "^4.1.3",
+    "chart.js": "^2.7.2",
     "cross-env": "5.1.6",
     "electron-is-dev": "0.3.0",
     "electron-log": "^2.2.6",
+    "jquery": "^3.3.1",
     "moment": "^2.22.2",
     "new-component": "^1.0.1",
     "react": "16.4.0",
@@ -31,9 +33,22 @@
     "react-scripts": "1.1.4",
     "wait-on": "2.1.0"
   },
+  "publish": [{
+    "provider": "github",
+    "repo": "https://phab.renewbuy.com/source/dossierapp.git"
+  }],
   "build": {
-    "publish": {
-      "provider": "github"
+    "appId":"com.dossier.app",
+    "linux": {
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
     }
   },
   "main": "public/electron.js",
